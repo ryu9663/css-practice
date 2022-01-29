@@ -1,0 +1,35 @@
+.containor {
+  border: 1px gray solid;
+}
+
+.containor .flex-wrapper {
+  margin: 10px;
+  border: 1px black solid;
+  display: flex;
+  width: 400px;
+}
+
+.containor .flex-wrapper .icon {
+  margin: 5px;
+  width: 600px;
+  border: 1px goldenrod solid;
+  padding: 5px;
+}
+
+.num1 {
+  /* 
+    flex-grow : 1;
+    flex-shrink : 2;
+    flex-basis : 30px;
+    과 같다.
+ */
+  flex: 1 2 30px;
+}
+
+.num2 {
+  flex: 1 2 300px;
+}
+
+.num3 {
+  flex: 1 1 300px;
+}
