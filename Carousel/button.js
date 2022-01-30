@@ -14,7 +14,7 @@ let centerCell =
 function translateContainer(direction) {
   const selectedBtn = direction === 1 ? "prev" : "next";
   container.style.transitionDuration = "500ms";
-  container.style.transform = `translateX(${direction * (100 / 5)}%)`;
+  container.style.transform = `translateX(${direction * (100 / carouselLength)}%)`;
   //ontransitioned event 는 CSS transition이 완려되었을때 실행된다.
   container.ontransitionend = () => reorganizeEl(selectedBtn);
   centerCell = getCenterCell(selectedBtn);
