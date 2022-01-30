@@ -15,16 +15,9 @@ function translateContainer(direction) {
   const selectedBtn = direction === 1 ? "prev" : "next";
   container.style.transitionDuration = "500ms";
   container.style.transform = `translateX(${direction * (100 / 5)}%)`;
+  //ontransitioned event 는 CSS transition이 완려되었을때 실행된다.
   container.ontransitionend = () => reorganizeEl(selectedBtn);
   centerCell = getCenterCell(selectedBtn);
-  console.log(centerCell);
-  centerCell.style.background = "skyblue";
-
-  containerList.forEach((el) => {
-    if (el.textContent !== centerCell.textContent) {
-      el.style.background = "pink";
-    }
-  });
 }
 
 function reorganizeEl(selectedBtn) {
@@ -50,5 +43,15 @@ function getCenterCell(selectedBtn) {
     console.log(container.children[0]);
     centerCell = carouselLength % 2 !== 0 ? container.children[1] : container.children[carouselLength / 2 - 1];
   }
+
+  //centerCell은 하늘색으로,
+  centerCell.style.background = "skyblue";
+
+  //나머지 Cell은 분홍색으로
+  containerList.forEach((el) => {
+    if (el.textContent !== centerCell.textContent) {
+      el.style.background = "pink";
+    }
+  });
   return centerCell;
 }
