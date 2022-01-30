@@ -16,7 +16,7 @@ function translateContainer(direction) {
   container.style.transitionDuration = "500ms";
   container.style.transform = `translateX(${direction * (100 / 5)}%)`;
   container.ontransitionend = () => reorganizeEl(selectedBtn);
-  centerCell = getCenterCell(direction);
+  centerCell = getCenterCell(selectedBtn);
   console.log(centerCell);
   centerCell.style.background = "skyblue";
 
@@ -40,16 +40,15 @@ function reorganizeEl(selectedBtn) {
       container.appendChild(container.firstElementChild);
 }
 
-function getCenterCell(direction) {
-  if (direction < 1) {
-    console.log(direction);
-    centerCell =
-      carouselLength % 2 !== 0
-        ? container.children[parseInt(carouselLength / 2)]
-        : container.children[carouselLength / 2];
+function getCenterCell(selectedBtn) {
+  if (selectedBtn === "next") {
+    //next버튼
+    console.log(selectedBtn);
+    centerCell = container.children[parseInt(carouselLength / 2) + 1];
   } else {
+    //prev버튼
     console.log(container.children[0]);
-    centerCell = carouselLength % 2 !== 0 ? container.children[0] : container.children[carouselLength / 2 - 2];
+    centerCell = carouselLength % 2 !== 0 ? container.children[1] : container.children[carouselLength / 2 - 1];
   }
   return centerCell;
 }
