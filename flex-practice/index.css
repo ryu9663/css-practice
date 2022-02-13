@@ -1,19 +1,34 @@
+body {
+  margin: 0 auto;
+  width: 500px;
+}
 .containor {
-  border: 1px gray solid;
+  background: #405ba4;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.containor span {
+  padding: 30px;
 }
 
 .containor .flex-wrapper {
-  margin: 10px;
-  border: 1px black solid;
+  /* margin-top: 30px; */
+  /* align-self: center; */
+  background: #e6e8ec;
+  border: none;
+  color: black;
   display: flex;
-  width: 400px;
+  flex-direction: column;
 }
 
 .containor .flex-wrapper .icon {
-  margin: 5px;
-  width: 600px;
-  border: 1px goldenrod solid;
+  margin: 0 30px 30px;
+
   padding: 5px;
+  background: white;
+  color: black;
 }
 
 .num1 {
