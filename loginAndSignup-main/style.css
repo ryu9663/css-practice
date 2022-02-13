@@ -1,0 +1,18 @@
+.invisibility {
+  visibility: hidden;
+}
+
+.hide{
+  display: none;
+}
+
+.unavailable {
+  color : red;
+}
+
+
+ 
+
+
+
+  /* border : 1px gray solid; */
