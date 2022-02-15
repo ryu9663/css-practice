@@ -38,3 +38,9 @@ body {
   background: white;
   color: black;
 }
+.paragraph-wrapper {
+  padding: 30px;
+}
+.paragraph-wrapper .paragraph {
+  /* white-space: nowrap; */
+}
