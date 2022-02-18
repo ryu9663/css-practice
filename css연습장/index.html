@@ -6,24 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS 연습</title>
     <link rel="stylesheet" href="index.css" />
+    <style>
+      .containor {
+        background: yellow;
+        height: 400px;
+        /* display: flex; */
+      }
+      #img {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        display: block;
+      }
+    </style>
   </head>
   <body>
     <div class="containor">
-      <span>고객님, 안녕하세요?</span>
-      <div class="flex-wrapper">
-        <span>페이스북 색감따라하기</span>
-        <div class="white-wrapper">
-          <div class="icon num1"><strong>박지성</strong> SBS에서 월드컵보세요!</div>
-          <div class="icon num2"><strong>안정환</strong> MBC죠...</div>
-          <div class="icon num3"><strong>이영표</strong> KBS는 수신료의 가치를..</div>
-        </div>
-        <div class="paragraph-wrapper">
-          <p class="paragraph">
-            아주 재미있는 월드컵이었습니다. 김영권과 손흥민의 골로 독일을 이겼습니다. 하지만 16강 진출에는 실패했습니다.
-            우리 태극전사들 모두 자랑스럽습니다. 정말 통쾌했습니다.
-          </p>
-        </div>
-      </div>
+      <img id="img" src="cafelatte.png" />
     </div>
   </body>
 </html>
