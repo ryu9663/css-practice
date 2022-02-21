@@ -5,24 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS 연습</title>
-    <link rel="stylesheet" href="index.css" />
     <style>
-      .containor {
-        background: yellow;
+      body {
+        border: 1px gray solid;
         height: 400px;
-        /* display: flex; */
+        width: 300px;
+        margin: 0 auto;
       }
-      #img {
-        width: 100px;
-        height: 100px;
-        margin: auto;
-        display: block;
+      li {
+        list-style-position: inside;
+        text-indent: -20px;
+        padding: 10px;
+        border: 1px gray solid;
+      }
+      #a:hover ~ #b {
+        background: yellowgreen;
       }
     </style>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="containor">
-      <img id="img" src="cafelatte.png" />
-    </div>
+    <ul class="containor">
+      <li class="containor" id="a">li , id = a, class = containor, body태그의 손자</li>
+      <li id="b">li , id = b</li>
+      <li id="c">li , id = c</li>
+    </ul>
+    <div class="containor">div태그 class = containor, body태그의 직속자식</div>
   </body>
 </html>
