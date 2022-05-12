@@ -1,12 +1,15 @@
-body {
-  border: 1px gray solid;
-  height: 400px;
-  width: 300px;
-  margin: 0 auto;
+.select {
+  width: 80px;
 }
-#a + #b {
-  background: pink;
-}
-#a + #c {
+option {
   background: red;
+  color: #fff;
+  padding: 3px 0;
+}
+body {
+  height: 600px;
+}
+
+canvas {
+  max-height: 100%;
 }

@@ -5,31 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS 연습</title>
-    <style>
-      body {
-        border: 1px gray solid;
-        height: 400px;
-        width: 300px;
-        margin: 0 auto;
-      }
-      li {
-        list-style-position: inside;
-        text-indent: -20px;
-        padding: 10px;
-        border: 1px gray solid;
-      }
-      #a:hover ~ #b {
-        background: yellowgreen;
-      }
-    </style>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
   </head>
   <body>
-    <ul class="containor">
-      <li class="containor" id="a">li , id = a, class = containor, body태그의 손자</li>
-      <li id="b">li , id = b</li>
-      <li id="c">li , id = c</li>
-    </ul>
-    <div class="containor">div태그 class = containor, body태그의 직속자식</div>
+    <canvas id="bar-chart" width="200" height="200">캔버스</canvas>
+    <span>캔버스 밑에 글</span>
+    <script src="canvas.js"></script>
   </body>
 </html>
