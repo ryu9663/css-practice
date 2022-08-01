@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="reset.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
   </head>
-  <body>
-    <canvas id="bar-chart" width="200" height="200">캔버스</canvas>
-    <span>캔버스 밑에 글</span>
-    <script src="canvas.js"></script>
-  </body>
+  <body><form id="form" method="POST">
+    <!-- disabled : value가 form 값에 포함 안된다. -->
+    <input name="disabled" disabled value="disabled"/>
+    <!-- readOnly : value가 form 값에 포함 된다. -->
+    <input name="readOnly" readonly value="readOnly"/>
+    <button>전송</button>
+  </button>
+  <div id="result"></div></body>
 </html>

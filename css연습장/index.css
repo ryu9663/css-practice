@@ -1,15 +1,13 @@
-.select {
-  width: 80px;
-}
-option {
-  background: red;
-  color: #fff;
-  padding: 3px 0;
-}
-body {
-  height: 600px;
+.containor {
+  margin: 20px;
+  padding: 20px;
+  border: 1px skyblue solid;
 }
 
-canvas {
-  max-height: 100%;
+form {
+  background-color: aqua;
+}
+
+form:has(button) {
+  background: aquamarine;
 }
