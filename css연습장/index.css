@@ -1,13 +1,17 @@
-.containor {
-  margin: 20px;
-  padding: 20px;
-  border: 1px skyblue solid;
+.list li:nth-child(5) {
+  background-color: #ffff00;
 }
 
-form {
-  background-color: aqua;
+.list li:nth-child(3n) {
+  background-color: antiquewhite;
 }
 
-form:has(button) {
-  background: aquamarine;
+.list li:nth-child(5n-1) {
+  background-color: skyblue;
+}
+.list li:nth-child(odd) {
+  color: blueviolet;
+}
+.list li:nth-child(even) {
+  color: lawngreen;
 }
