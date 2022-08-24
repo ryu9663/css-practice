@@ -15,3 +15,27 @@
 .list li:nth-child(even) {
   color: lawngreen;
 }
+.containor {
+  position: relative;
+  background-color: blue;
+  height: 100%;
+}
+.list {
+  /* position: relative; */
+  /* background-color: red; */
+}
+.list > li {
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+}
+.color {
+  width: 100px;
+  height: 100px;
+  background-color: #ffff00;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
