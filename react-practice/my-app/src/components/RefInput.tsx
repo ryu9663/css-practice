@@ -19,6 +19,7 @@ function RefInput() {
   useEffect(() => {
     console.log(text);
   }, [text]);
+
   return (
     <>
       <h1>비제어 컴포넌트</h1>
